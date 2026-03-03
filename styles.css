@@ -144,10 +144,9 @@ header{
 
 
 #genInfo {
-  display: flex;
   justify-content: center; /* horizontal center */
   align-items: center;     /* vertical center */
-  min-height: 100vh;       /* full viewport height */
+
   flex-direction: column;  /* stack cards vertically */
   gap: 1rem;               /* spacing between cards */
   padding: 1rem;
