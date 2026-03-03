@@ -154,10 +154,61 @@ header{
     color: var(--black) !important;
     font-size:px;
 }
+.nav .nav-link:hover{
+  background-color: #487f99;
+  transform: translateY(-1px);
+}
+
 
 .nav .nav-link {
     color:black !important;
+    border-radius: 10px;
 }
+
+/*  contact button */
+.collapse.navbar-collapse{
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+}
+
+#contact-btn{
+  background-color: #4f88a8; 
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+#contact-btn:hover{
+  background-color: #3d6f86;
+  transform: translateY(-1px);
+}
+
+/*  translate button */
+#translate{
+  background-color: #4f88a8; 
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 480px;
+  margin-right:10px;
+}
+
+#translate:hover{
+  background-color: #3d6f86;
+  transform: translateY(-1px);
+}
+
+
+
+
 
 .card {
   display: flex;
