@@ -2,14 +2,20 @@
 // Get the modal
 var modal = document.getElementById("contactModal");
 var btn = document.getElementById("contact-btn");
+var generalButton = document.getElementById("genInfo-contactButton");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-if (btn) {
+if (btn || generalButton) {
 	btn.onclick = function() {
 		if (modal) modal.style.display = "block";
 	}
+
+	generalButton.onclick = function() {
+		if (modal) modal.style.display = "block";
+	}
+
 }
 if (span) {
 	span.onclick = function() {
@@ -20,5 +26,12 @@ if (span) {
 window.onclick = function(event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
+	}
+}
+
+var translate = document.getElementById("translate");
+if (translate) {
+	translate.onclick = function(){
+	alert("Welsh translation to be added")
 	}
 }

@@ -7,6 +7,11 @@
     --black:#242423;
 }
 
+* {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+}
+
 /* Outer footer parent container */
 footer { 
     text-align: center; 
@@ -105,7 +110,33 @@ footer p a:visited  {
 footer p a:hover, 
 footer p a:active  {
     color: var(--black);
-    border-bottom-color: #fff;
+    border-bottom-color: transparent;
+
+}
+
+.footer-text{
+    display: flex;
+}
+
+.footer-address {
+font-weight: bold;
+max-width: 300px;
+text-align: left;
+font-size: 15px;
+margin: 40px 0px 0px -185px;
+
+}
+
+.footer_icons{
+    max-width:20px;
+}
+
+#footer-td1{
+    width: 50% !important;
+}
+
+#footer-td2{
+    width: 50% !important;
 }
 /*Header*/
 header{
@@ -128,10 +159,61 @@ header{
     color: var(--black) !important;
     font-size:px;
 }
+.nav .nav-link:hover{
+  background-color: #487f99;
+  transform: translateY(-1px);
+}
+
 
 .nav .nav-link {
     color:black !important;
+    border-radius: 10px;
 }
+
+/*  contact button */
+.collapse.navbar-collapse{
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+}
+
+#contact-btn{
+  background-color: #4f88a8; 
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+#contact-btn:hover{
+  background-color: #3d6f86;
+  transform: translateY(-1px);
+}
+
+/*  translate button */
+#translate{
+  background-color: #4f88a8; 
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 480px;
+  margin-right:10px;
+}
+
+#translate:hover{
+  background-color: #3d6f86;
+  transform: translateY(-1px);
+}
+
+
+
+
 
 .card {
   display: flex;
@@ -186,7 +268,7 @@ header{
   color: black;
   text-decoration: none;
   cursor: pointer;
-
+}
 
 #genInfo {
   justify-content: center; /* horizontal center */
@@ -210,4 +292,16 @@ header{
   width: 18rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   border-radius: 8px;
+}
+
+
+#genInfo-contactButton {
+  background-color: var(--blue);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 25rem;
+  padding: 1rem 0;
+  border-radius: 10px;
+  cursor: pointer;
 }
