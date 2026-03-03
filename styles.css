@@ -29,3 +29,15 @@ header{
     color: var(--black) !important;
     font-size:px;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 18rem; /* move width here instead of inline */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* allows body to grow */
+}
+
