@@ -7,6 +7,28 @@
     --black:#242423;
 }
 
+/*Header*/
+header{
+    background:var(--blue);
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    display:flex;
+    align-items:center;
+    padding:12px 20px;
+    text:var(--black);
+}
+.companyName{
+    font-size:36px;
+    font-weight:700;
+    margin:0;
+    color:var(--black);
+
+}
+
+
+.navbar-nav{
+    color: var(--black) !important;
+    font-size:px;
+}
 .card {
   display: flex;
   flex-direction: column;
