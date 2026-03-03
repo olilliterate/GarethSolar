@@ -107,3 +107,63 @@ footer p a:active  {
     color: var(--black);
     border-bottom-color: #fff;
 }
+/*Header*/
+header{
+    background:var(--blue);
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    display:flex;
+    align-items:center;
+    padding:12px 20px;
+    text:var(--black);
+}
+.companyName{
+    font-size:36px;
+    font-weight:700;
+    margin:0;
+    color:var(--black);
+
+}
+
+
+.navbar-nav{
+    color: var(--black) !important;
+    font-size:px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 18rem; /* move width here instead of inline */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* allows body to grow */
+}
+
+
+
+#genInfo {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh;       /* full viewport height */
+  flex-direction: column;  /* stack cards vertically */
+  gap: 1rem;               /* spacing between cards */
+  padding: 1rem;
+  background-color: #f9f9f9; /* optional, just looks nice */
+}
+
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  width: 18rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
