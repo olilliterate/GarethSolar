@@ -124,7 +124,6 @@ header{
 
 }
 
-
 .navbar-nav{
     color: var(--black) !important;
     font-size:px;
@@ -146,13 +145,53 @@ header{
   flex: 1; /* allows body to grow */
 }
 
+/* contact pop-up*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+ 
+}
+
+/* Modal ContentBox */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  display:flex;
+  flex-direction: column;
+  gap: 12px;
+  
+}
+.contact-form{display:flex;
+    flex-direction:column;
+    gap:12px;
+    max-width:720px}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 
 
 #genInfo {
-  display: flex;
   justify-content: center; /* horizontal center */
   align-items: center;     /* vertical center */
-  min-height: 100vh;       /* full viewport height */
+
   flex-direction: column;  /* stack cards vertically */
   gap: 1rem;               /* spacing between cards */
   padding: 1rem;
