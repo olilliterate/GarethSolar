@@ -41,3 +41,29 @@ header{
   flex: 1; /* allows body to grow */
 }
 
+
+
+#genInfo {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh;       /* full viewport height */
+  flex-direction: column;  /* stack cards vertically */
+  gap: 1rem;               /* spacing between cards */
+  padding: 1rem;
+  background-color: #f9f9f9; /* optional, just looks nice */
+}
+
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  width: 18rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
