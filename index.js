@@ -22,3 +22,10 @@ window.onclick = function(event) {
 		modal.style.display = "none";
 	}
 }
+
+var translate = document.getElementById("translate");
+if (translate) {
+	translate.onclick = function(){
+	alert("Welsh translation to be added")
+	}
+}
